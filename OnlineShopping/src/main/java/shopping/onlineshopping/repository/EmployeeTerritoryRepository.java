@@ -5,6 +5,10 @@ import org.springframework.stereotype.Repository;
 import shopping.onlineshopping.modal.EmployeeTerritory;
 import shopping.onlineshopping.modal.EmployeeTerritoryId;
 
+import java.util.List;
+
 @Repository
 public interface EmployeeTerritoryRepository extends JpaRepository<EmployeeTerritory, EmployeeTerritoryId> {
+    List<EmployeeTerritory> findByIdEmployeeId(Long employeeId);
+    List<EmployeeTerritory> findByIdTerritoryId(Long territoryId);
 }

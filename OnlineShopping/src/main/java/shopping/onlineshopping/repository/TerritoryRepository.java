@@ -6,4 +6,6 @@ import shopping.onlineshopping.modal.Territory;
 
 @Repository
 public interface TerritoryRepository extends JpaRepository<Territory, Long> {
+    Territory findByTerritoryDescription(String description);
+    Territory findByRegionId(Long regionId);
 }

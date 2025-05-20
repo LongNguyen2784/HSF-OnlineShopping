@@ -11,5 +11,5 @@ public class TerritoryDTO {
     @NonNull
     private String territoryDescription;
     @NonNull
-    private String region;
+    private Long region;
 }

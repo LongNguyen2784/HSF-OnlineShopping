@@ -6,4 +6,7 @@ import shopping.onlineshopping.modal.Shipper;
 
 @Repository
 public interface ShipperRepository extends JpaRepository<Shipper, Long> {
+    Shipper findByShipperShipperName(String shipperName);
+    Shipper findByShipperPhone(String phone);
+
 }

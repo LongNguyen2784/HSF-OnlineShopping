@@ -23,7 +23,7 @@ public class OrderDetail {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @MapsId("productId")
-    @JoinColumn(name="product_id")
+    @JoinColumn(name="product_id",nullable = false)
     private Product product;
 
     @Column(name="quantity", nullable = false)

@@ -20,7 +20,9 @@ public class Shipper {
     @Column(name="company_name", nullable = false)
     @JsonProperty("companyName")
     private String companyName;
-
+    @Column(name="shipper_name", nullable = false)
+    @JsonProperty("shipperName")
+    private String shipperName;
     @Column(name="phone")
     private String phone;
 }

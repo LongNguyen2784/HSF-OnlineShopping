@@ -6,4 +6,5 @@ import shopping.onlineshopping.modal.Region;
 
 @Repository
 public interface RegionRepository extends JpaRepository<Region, Long> {
+    Region findByRegionDescription(String description);
 }

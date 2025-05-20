@@ -40,7 +40,7 @@ public class Order {
     private LocalDateTime shippedDate;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="ship_via")
+    @JoinColumn(name="ship_via" ,referencedColumnName="shipper_id")
     private Shipper shipper;
 
     @Column(name="freight")
