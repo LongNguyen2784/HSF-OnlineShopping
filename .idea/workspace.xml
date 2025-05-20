@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="30671da3-8909-4ce1-ab68-344186795d2a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/mapper/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/mapper/EmployeeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/mapper/EmployeeTerritoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/mapper/OrderDetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/mapper/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/mapper/RegionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/mapper/ShipperMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/mapper/SupplierMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/mapper/TerritoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/service/EmployeeTerritoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/service/OrderDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/service/RegionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/service/ShipperService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/service/SupplierService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/service/TerritoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/OnlineShoppingApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/modal/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/modal/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/modal/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/modal/EmployeeTerritory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/modal/EmployeeTerritoryId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/modal/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/modal/OrderDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/modal/OrderDetailId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/modal/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/modal/Region.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/modal/Shipper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/modal/Supplier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/modal/Territory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/repository/CategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/repository/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/repository/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/repository/EmployeeTerritoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/repository/OrderDetailRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/repository/OrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/repository/RegionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/repository/ShipperRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/repository/SupplierRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/java/shopping/onlineshopping/repository/TerritoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/main/resources/db/tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/OnlineShopping/src/test/java/shopping/onlineshopping/OnlineShoppingApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/dto/TerritoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/dto/TerritoryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/modal/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/modal/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/modal/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/modal/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/modal/Shipper.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/modal/Shipper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/EmployeeTerritoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/EmployeeTerritoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/OrderDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/OrderDetailRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/RegionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/RegionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/ShipperRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/ShipperRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/SupplierRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/SupplierRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/TerritoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShopping/src/main/java/shopping/onlineshopping/repository/TerritoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShopping/src/main/resources/db/tables.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2x74DjPwowPJXtk4opHOWSH7pHu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/rippe/Downloads/VuTrongDai",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql",
+      "mysql_aurora"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.OnlineShoppingApplication">
+    <configuration name="tables.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/OnlineShopping/src/main/resources/db/tables.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <configuration name="OnlineShoppingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="onlineshopping" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="shopping.onlineshopping.OnlineShoppingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Database Script.tables.sql" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30671da3-8909-4ce1-ab68-344186795d2a" name="Changes" comment="" />
+      <created>1747275660885</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747275660885</updated>
+      <workItem from="1747275662008" duration="5167000" />
+      <workItem from="1747280876723" duration="4319000" />
+      <workItem from="1747297542079" duration="4640000" />
+      <workItem from="1747303522095" duration="1375000" />
+      <workItem from="1747305816810" duration="2830000" />
+      <workItem from="1747374605831" duration="51000" />
+      <workItem from="1747378731766" duration="805000" />
+      <workItem from="1747620341172" duration="1569000" />
+      <workItem from="1747621935476" duration="8886000" />
+      <workItem from="1747642287227" duration="3991000" />
+      <workItem from="1747720916135" duration="4876000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
