@@ -1,21 +1,30 @@
 package shopping.onlineshopping.modal.user;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
+import shopping.onlineshopping.modal.Region;
+import shopping.onlineshopping.modal.product.Product;
+
+import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name="employees")
 @NoArgsConstructor
 @AllArgsConstructor
-@Setter
-@Getter
-@ToString
+@Data
 public class Employee {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int employeeId;
+    @Column(name = "employee_id")
+    private Long employeeId;
+
+    @OneToOne
+    @JoinColumn(name = "employee_id", referencedColumnName = "id") // FK → accounts(id)
+    private Account account;
 
     @Column(name="title")
     private String title;
@@ -26,11 +35,11 @@ public class Employee {
 
     @Column(name="birth_date")
     @JsonProperty("birthDate")
-    private String birthDate;
+    private LocalDateTime birthDate;
 
     @Column(name="hire_date")
     @JsonProperty("hireDate")
-    private String hireDate;
+    private LocalDateTime hireDate;
 
     @Column(name="address")
     private String address;
@@ -38,8 +47,9 @@ public class Employee {
     @Column(name="city")
     private String city;
 
-    @Column(name="region")
-    private String region;
+    @ManyToOne
+    @JoinColumn(name = "region_id")
+    private Region region;
 
     @Column(name="country")
     private String country;
@@ -55,12 +65,13 @@ public class Employee {
     @Column(name="extension")
     private String extension;
 
+    @OneToMany(mappedBy = "employee")
+    @JsonManagedReference
+    private List<Product> products;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "reports_to")
-    private Employee employee;
+    private Employee reportsTo;
 
-    @OneToOne
-    @JoinColumn(name = "account_id")
-    private Account account;
+
 }

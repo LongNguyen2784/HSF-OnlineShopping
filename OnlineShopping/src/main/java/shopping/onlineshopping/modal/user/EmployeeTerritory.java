@@ -16,9 +16,11 @@ public class EmployeeTerritory {
     private EmployeeTerritoryId employeeTerritoryId;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @MapsId("employeeId")
     @JoinColumn(name="employee_id",nullable = false)
     private Employee employee;
     @ManyToOne(fetch = FetchType.LAZY)
+    @MapsId("territoryId")
     @JoinColumn(name="territory_id",nullable = false)
     private Territory territory;
 }

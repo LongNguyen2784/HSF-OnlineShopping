@@ -9,6 +9,8 @@ import shopping.onlineshopping.modal.user.Shipper;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="orders")
@@ -49,10 +51,6 @@ public class Order {
     @Column(name="freight")
     private BigDecimal freight;
 
-    @Column(name="ship_name")
-    @JsonProperty("shipName")
-    private String shipName;
-
     @Column(name="ship_address")
     @JsonProperty("shipAddress")
     private String shipAddress;
@@ -60,6 +58,10 @@ public class Order {
     @Column(name="ship_city")
     @JsonProperty("shipCity")
     private String shipCity;
+
+    @Column(name="ship_name")
+    @JsonProperty("shipName")
+    private String shipName;
 
     @Column(name="ship_region")
     @JsonProperty("shipRegion")
@@ -72,4 +74,8 @@ public class Order {
     @Column(name="ship_country")
     @JsonProperty("shipCountry")
     private String shipCountry;
+
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+    private List<OrderDetail> orderDetails = new ArrayList<>();
+
 }

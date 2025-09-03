@@ -14,7 +14,11 @@ import lombok.*;
 public class Territory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int territoryId;
+    private Long territoryId;
+
+    @Column(name = "territory_name", nullable = false)
+    @JsonProperty("territoryName")
+    private String territoryName;
 
     @Column(name="territory_description", nullable = false)
     @JsonProperty("territoryDescription")

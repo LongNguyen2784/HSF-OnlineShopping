@@ -3,6 +3,7 @@ package shopping.onlineshopping.modal.user;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
+import shopping.onlineshopping.modal.Cart;
 
 @Entity
 @Table(name="customers")
@@ -14,8 +15,13 @@ import lombok.*;
 public class Customer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String customerId;
+    @Column(name = "customer_id")
+    private Long customerId;
+
+    @OneToOne
+    @MapsId
+    @JoinColumn(name = "customer_id")
+    private Account account;
 
     @Column(name="company_name" , nullable = false)
     @JsonProperty("companyName")
@@ -51,7 +57,6 @@ public class Customer {
     @Column(name="fax")
     private String fax;
 
-    @OneToOne
-    @JoinColumn(name = "account_id")
-    private Account account;
+    @OneToOne(mappedBy = "customer", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Cart cart;
 }

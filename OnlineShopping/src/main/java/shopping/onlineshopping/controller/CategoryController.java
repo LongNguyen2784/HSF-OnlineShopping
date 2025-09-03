@@ -1,39 +1,38 @@
 package shopping.onlineshopping.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 import shopping.onlineshopping.dto.CategoryDTO;
+import shopping.onlineshopping.modal.user.Account;
 import shopping.onlineshopping.service.CategoryService;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/category")
+@RequiredArgsConstructor
 public class CategoryController {
-    @Autowired
-    private CategoryService categoryService;
-    @GetMapping()
-    public List<CategoryDTO> getAllCategories(){
-        return categoryService.getAllCategories();
+    private final CategoryService categoryService;
+    @GetMapping("")
+    public ResponseEntity<List<CategoryDTO>> getAll() {
+        List<CategoryDTO> list = categoryService.getAllCategories(); // ✅ Mapper convert đúng
+        return ResponseEntity.ok(list); // ✅ Không trả về entity
     }
-    @GetMapping("/{id}")
-    public CategoryDTO getCategoryById(@PathVariable Long id){
-        return categoryService.getCategoryById(id);
+
+    @PostMapping("/admin")
+    public CategoryDTO createCategory(@AuthenticationPrincipal Account account,
+            @RequestBody CategoryDTO category){
+        return categoryService.createCategoryByAdmin(account,category);
     }
-    @GetMapping("/{name}")
-    public CategoryDTO getCategoryByName(@PathVariable String name){
-        return categoryService.getCategoryByName(name);
+    @DeleteMapping("/admin/{id}")
+    public void deleteCategory(@AuthenticationPrincipal Account account, @PathVariable Long id) {
+        categoryService.deleteCategoryByAdmin(account,id);
     }
-    @PostMapping()
-    public CategoryDTO createCategory(@RequestBody CategoryDTO category){
-        return categoryService.createCategory(category);
+    @GetMapping("/region/{regionId}")
+    public List<CategoryDTO> getCategoryByRegionId(@PathVariable("regionId") int regionId){
+        return categoryService.getAllCategoriesByRegion(regionId);
     }
-    @PutMapping()
-    public CategoryDTO updateCategory(@RequestBody CategoryDTO category){
-        return categoryService.updateCategory(category);
-    }
-    @DeleteMapping("/{id}")
-    public void deleteCategoryById(@PathVariable Long id){
-        categoryService.deleteCategoryById(id);
-    }
+
 }

@@ -15,8 +15,11 @@ public class Shipper {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "shipper_id")
     private int shipperId;
-
+    @Column(name="ship_via", nullable=false)
+    @JsonProperty("shipVia")
+    private  String shipVia;
     @Column(name="company_name", nullable = false)
     @JsonProperty("companyName")
     private String companyName;

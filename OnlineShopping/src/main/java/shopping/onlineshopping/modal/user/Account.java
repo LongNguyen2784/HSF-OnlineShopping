@@ -1,5 +1,6 @@
 package shopping.onlineshopping.modal.user;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
@@ -7,6 +8,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -34,14 +36,6 @@ public class Account implements UserDetails {
     @Column(name="password" ,nullable = false)
     private String password;
 
-    @Column(name="last_name", nullable = false)
-    @JsonProperty("lastName")
-    private String lastName;
-
-    @Column(name="first_name", nullable = false)
-    @JsonProperty("firstName")
-    private String firstName;
-
     @Enumerated(EnumType.STRING)
     @Column(name = "role",nullable = false)
     private Roles role; // CUSTOMER, EMPLOYEE, ADMIN
@@ -50,22 +44,27 @@ public class Account implements UserDetails {
     @Column(name = "status",nullable = false)
     private Status status;
 
+    @Column(name = "activation_token")
+    private String activationToken;
 
-    // Nếu cần liên kết thông tin chi tiết
-    @OneToOne(mappedBy = "account",cascade = CascadeType.ALL)
-    private Customer customer;
+    @Column(name = "token_expiry")
+    private LocalDateTime tokenExpiry;
 
-    @OneToOne(mappedBy = "account",cascade = CascadeType.ALL)
-    private Employee employee;
+    @Column(name = "reset_token")
+    private String resetToken;
 
-    public String getFullName() {
-        return firstName + " " + lastName;
-    }
+    @Column(name = "full_name")
+    private String fullName;
+
+    @Column(name = "phone_number")
+    private String phoneNumber;
+
+    @Column(name = "image_url")
+    private String imageUrl;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        SimpleGrantedAuthority authority = new SimpleGrantedAuthority(role.name());
-        return Collections.singleton(authority);
+        return Collections.singleton(new SimpleGrantedAuthority("ROLE_" + role.name())); // 👈 Phải có ROLE_
     }
 
     @Override
@@ -92,10 +91,11 @@ public class Account implements UserDetails {
     public boolean isCredentialsNonExpired() {
         return true;
     }
-
     @Override
     public boolean isEnabled() {
         return status == Status.ACTIVE;
     }
+
+
 }
 

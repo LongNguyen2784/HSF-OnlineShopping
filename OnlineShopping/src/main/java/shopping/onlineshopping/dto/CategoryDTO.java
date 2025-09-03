@@ -1,17 +1,15 @@
 package shopping.onlineshopping.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import lombok.*;
-
-@AllArgsConstructor
+@Data
 @NoArgsConstructor
-@Getter
-@Setter
-@ToString
+@AllArgsConstructor
 public class CategoryDTO {
-    @NonNull
+    private Long categoryId;
     private String categoryName;
-
-    @NonNull
     private String description;
+    private Long regionId;
 }

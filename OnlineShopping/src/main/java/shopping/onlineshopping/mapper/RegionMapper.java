@@ -8,4 +8,5 @@ import shopping.onlineshopping.modal.Region;
 public interface RegionMapper {
     RegionDTO toRegionDTO(Region region);
     Region toRegion(RegionDTO regionDTO);
+
 }

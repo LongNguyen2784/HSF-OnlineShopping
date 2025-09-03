@@ -12,6 +12,6 @@ import java.io.Serializable;
 @Setter
 @ToString
 public class EmployeeTerritoryId implements Serializable {
-    private int employeeId;
-    private int territoryId;
+    private Long employeeId;
+    private Long territoryId;
 }
